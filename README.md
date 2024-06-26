@@ -7,7 +7,7 @@
 
 次世代のウェブアプリケーション開発のための、高性能かつスケーラブルなモノレポスターターキット。
 
-![Demo Screenshot](https://via.placeholder.com/800x400?text=Demo+Screenshot)
+![Demo Screenshot](./images/top.png)
 
 ## 🚀 特徴
 
