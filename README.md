@@ -84,26 +84,16 @@
 import { NewComponent } from "@repo/ui";
 ```
 
-## 🤝 コントリビューション
-
-コントリビューションは大歓迎です！以下の手順に従ってください：
-
-1. このリポジトリをフォークします
-2. 新しい機能ブランチを作成します: `git checkout -b my-new-feature`
-3. 変更をコミットします: `git commit -am 'Add some feature'`
-4. ブランチにプッシュします: `git push origin my-new-feature`
-5. プルリクエストを作成します
-
 ## 📄 ライセンス
 
 このプロジェクトは [MIT ライセンス](LICENSE) の下で公開されています。
 
 ## 📮 サポート
 
-質問や問題がある場合は、[GitHub Issues](https://github.com/Ryopo18/my-turborepo/issues) を開いてください。また、[Discussions](https://github.com/Ryopo18/my-turborepo/discussions) セクションでコミュニティと交流することもできます。
+質問や問題がある場合は、[GitHub Issues](https://github.com/Ryopo18/my-turborepo/issues) を開いてください。
 
 ---
 
 🌟 このプロジェクトが気に入ったら、ぜひスターを付けてください！
 
-Made with ❤️ by [Your Name](https://github.com/Ryopo18)
+Made with ❤️ by [Ryopo18](https://github.com/Ryopo18)
