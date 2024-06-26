@@ -1,81 +1,109 @@
-# Turborepo starter
+# Next.js TailwindCSS Turborepo Starter Kit
 
-This is an official starter Turborepo.
+[![Turborepo](https://img.shields.io/badge/built%20with-Turborepo-cc00ff.svg)](https://turborepo.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-blueviolet.svg)](https://nextjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC.svg)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-007ACC.svg)](https://www.typescriptlang.org/)
 
-## Using this example
+次世代のウェブアプリケーション開発のための、高性能かつスケーラブルなモノレポスターターキット。
 
-Run the following command:
+![Demo Screenshot](https://via.placeholder.com/800x400?text=Demo+Screenshot)
 
-```sh
-npx create-turbo@latest
-```
+## 🚀 特徴
 
-## What's inside?
+- **⚡ 超高速ビルド**: Turborepo によるタスクのキャッシングと並列実行
+- **🎭 App Router**: Next.js 15 で App Router を使用
+- **📦 モノレポ構造**: 効率的なコード共有と依存関係管理- **🔄 HMR**: turbopack による高速な開発サイクルを実現するホットモジュールリプレイスメント
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+## 📂 プロジェクト構造
 
 ```
-cd my-turborepo
-pnpm build
+.
+├── apps
+│   └── web  　　# メインの Next.js アプリケーション
+└── packages
+    └── ui      # 共有 UI コンポーネント
 ```
 
-### Develop
+## 🛠 技術スタック
 
-To develop all apps and packages, run the following command:
+- **Turborepo**: モノレポ管理とビルド最適化
+- **Next.js 15**: React フレームワーク（App Router 採用）
+- **TailwindCSS 3**: ユーティリティファーストの CSS フレームワーク
+- **TypeScript 5**: 静的型付けによるコード品質向上
+- **pnpm**: 高速で効率的なパッケージマネージャー
+- **ESLint**: コード品質とスタイルの一貫性を保証
+- **Prettier**: コードフォーマッター
 
+## 🚀 始め方
+
+1. **リポジトリのクローン:**
+
+   ```bash
+   git clone https://github.com/Ryopo18/my-turborepo
+   cd my-turborepo
+   ```
+
+2. **依存関係のインストール:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **環境変数の設定:**
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   `.env.local` ファイルを編集し、必要な環境変数を設定してください。
+
+4. **開発サーバーの起動:**
+
+   ```bash
+   pnpm run dev
+   ```
+
+5. ブラウザで [http://localhost:3000](http://localhost:3000) を開きます。
+
+## 📜 利用可能なスクリプト
+
+- `pnpm run dev`: 開発モードですべてのアプリとパッケージを実行
+- `pnpm run build`: すべてのアプリとパッケージをビルド
+- `pnpm run lint`: すべてのアプリとパッケージにリントを実行
+- `pnpm run test`: すべてのテストを実行
+- `pnpm run clean`: すべてのビルド出力とキャッシュをクリア
+
+## 🎨 UI コンポーネントのカスタマイズ
+
+1. `packages/ui/components` ディレクトリに新しいコンポーネントを追加します。
+2. `packages/ui/index.ts` ファイルで新しいコンポーネントをエクスポートします。
+3. `apps/web` 内で新しいコンポーネントを以下のようにインポートして使用します：
+
+```typescript
+import { NewComponent } from "@repo/ui";
 ```
-cd my-turborepo
-pnpm dev
-```
 
-### Remote Caching
+## 🤝 コントリビューション
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+コントリビューションは大歓迎です！以下の手順に従ってください：
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+1. このリポジトリをフォークします
+2. 新しい機能ブランチを作成します: `git checkout -b my-new-feature`
+3. 変更をコミットします: `git commit -am 'Add some feature'`
+4. ブランチにプッシュします: `git push origin my-new-feature`
+5. プルリクエストを作成します
 
-```
-cd my-turborepo
-npx turbo login
-```
+## 📄 ライセンス
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+このプロジェクトは [MIT ライセンス](LICENSE) の下で公開されています。
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## 📮 サポート
 
-```
-npx turbo link
-```
+質問や問題がある場合は、[GitHub Issues](https://github.com/Ryopo18/my-turborepo/issues) を開いてください。また、[Discussions](https://github.com/Ryopo18/my-turborepo/discussions) セクションでコミュニティと交流することもできます。
 
-## Useful Links
+---
 
-Learn more about the power of Turborepo:
+🌟 このプロジェクトが気に入ったら、ぜひスターを付けてください！
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Made with ❤️ by [Your Name](https://github.com/Ryopo18)
