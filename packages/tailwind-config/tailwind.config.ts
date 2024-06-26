@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [
-    "./packages/ui/**/*.{js,ts,jsx,tsx}",
-    "./apps/web/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.tsx",
+    // apps/web のファイル
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    // packages/ui のファイル（apps/web からの相対パス）
+    "../../packages/ui/src/**/*.{js,ts,jsx,tsx}",
+    // 他のアプリケーションやパッケージがある場合、ここに追加
   ],
   theme: {
     extend: {},
