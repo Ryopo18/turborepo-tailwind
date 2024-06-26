@@ -13,7 +13,8 @@
 
 - **⚡ 超高速ビルド**: Turborepo によるタスクのキャッシングと並列実行
 - **🎭 App Router**: Next.js 15 で App Router を使用
-- **📦 モノレポ構造**: 効率的なコード共有と依存関係管理- **🔄 HMR**: turbopack による高速な開発サイクルを実現するホットモジュールリプレイスメント
+- **📦 モノレポ構造**: 効率的なコード共有と依存関係管理
+- **🔄 HMR**: turbopack による高速な開発サイクルを実現するホットモジュールリプレイスメント
 
 ## 📂 プロジェクト構造
 
@@ -32,16 +33,14 @@
 - **TailwindCSS 3**: ユーティリティファーストの CSS フレームワーク
 - **TypeScript 5**: 静的型付けによるコード品質向上
 - **pnpm**: 高速で効率的なパッケージマネージャー
-- **ESLint**: コード品質とスタイルの一貫性を保証
-- **Prettier**: コードフォーマッター
 
 ## 🚀 始め方
 
 1. **リポジトリのクローン:**
 
    ```bash
-   git clone https://github.com/Ryopo18/my-turborepo
-   cd my-turborepo
+   git clone https://github.com/Ryopo18/turborepo-tailwind
+   cd turborepo-tailwind
    ```
 
 2. **依存関係のインストール:**
@@ -90,10 +89,10 @@ import { NewComponent } from "@repo/ui";
 
 ## 📮 サポート
 
-質問や問題がある場合は、[GitHub Issues](https://github.com/Ryopo18/my-turborepo/issues) を開いてください。
+質問や問題がある場合は、[GitHub Issues](https://github.com/Ryopo18/turborepo-tailwind/issues) を開いてください。
 
 ---
 
 🌟 このプロジェクトが気に入ったら、ぜひスターを付けてください！
 
-Made with ❤️ by [Ryopo18](https://github.com/Ryopo18)
+Made with by [Ryopo18](https://github.com/Ryopo18/turborepo-tailwind)
